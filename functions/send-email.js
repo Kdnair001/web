@@ -11,7 +11,7 @@ exports.handler = async (event, context) => {
 
   const data = {
     from: 'no-reply@yourdomain.com', // Replace with your verified sender
-    to: 'your-email@example.com',    // Replace with your receiving email address
+    to: 'ctzenocs@gmail.com',         // Updated recipient email address
     subject: `New Complaint from ${name}`,
     text: `Name: ${name}\nEmail: ${email}\n\nComplaint:\n${complaint}`,
   };

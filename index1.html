@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Development</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+        }
+        .video-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            text-align: center;
+            z-index: 1;
+        }
+        .container {
+            padding: 20px;
+            max-width: 600px;
+            width: 80%;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <video class="video-bg" autoplay muted loop>
+        <source src="vid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="overlay">
+        <div class="container">
+            <h1>Website Under Development</h1>
+            <p>We are working hard to bring you a better experience. Please check back soon!</p>
+        </div>
+    </div>
+</body>
+</html>
